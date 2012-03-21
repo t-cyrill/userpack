@@ -1,0 +1,7 @@
+alias lll='ll -t'
+
+grepr() {
+    grep --color=auto -nr $1 .
+    return 0
+}
+
