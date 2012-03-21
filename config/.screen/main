@@ -49,16 +49,17 @@ vbell off
 
 altscreen on
 
-select 0
-split
-split -v
-focus
-focus
-split -v
-screen 2
-focus top
-focus
-screen 1
-focus bottom
-screen 3
-focus top
+# select 0
+# split
+# split -v
+# focus
+# focus
+# split -v
+# screen 2
+# focus top
+# focus
+# screen 1
+# focus bottom
+# screen 3
+# focus top
+
