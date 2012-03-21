@@ -1,1 +1,2 @@
-cp -R config/.* .
+cp -R config/.* ~/
+
