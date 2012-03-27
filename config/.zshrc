@@ -34,6 +34,14 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "OA" history-beginning-search-backward-end
+bindkey "OB" history-beginning-search-forward-end
+bindkey "[A" history-beginning-search-backward-end
+bindkey "[B" history-beginning-search-forward-end
+
 PROMPT="%B%{[32m%}%n@%m%#%{[m%}%b "
 RPROMPT="%{[32m%}[%d]%{[m%}"
 
