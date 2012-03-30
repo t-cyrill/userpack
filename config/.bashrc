@@ -95,6 +95,8 @@ alias ll='ls -al'
 alias la='ls -A'
 alias l='ls -CF'
 
+export PATH=/usr/local/mysql/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -102,9 +104,15 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-export PATH=/usr/local/mysql/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+if [ -f ~/.bash_user ]; then
+	source ~/.bash_user
+fi
 
-source ~/git-completion.bash
+if [ -f ~/git-completion.bash ]; then
+	source ~/git-completion.bash
+fi
 
-source ~/.bash_user
+if [ -f ~/.bash_local ]; then
+	source ~/.bash_local
+fi
 
