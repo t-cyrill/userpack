@@ -3,7 +3,8 @@ alias rm='rm -i'
 alias cp='cp -i -p'
 alias mv='mv -i'
 
+alias ls='ls --color'
+alias l='ls -CF'
 alias ll='ls -al'
 alias la='ls -A'
-alias l='ls -CF'
 
