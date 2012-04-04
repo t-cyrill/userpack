@@ -45,7 +45,20 @@ bindkey "[B" history-beginning-search-forward-end
 PROMPT="%B%{[32m%}%n@%m%#%{[m%}%b "
 RPROMPT="%{[32m%}[%d]%{[m%}"
 
-# load .bash_user
-source ~/.bash_user
-source ~/.zsh_user
+# load
+if [ -f ~/.zsh_user ]; then
+	source ~/.zsh_user
+fi
+
+if [ -f ~/.bash_user ]; then
+	source ~/.bash_user
+fi
+
+if [ -f ~/git-completion.bash ]; then
+	source ~/git-completion.bash
+fi
+
+if [ -f ~/.bash_local ]; then
+	source ~/.bash_local
+fi
 
