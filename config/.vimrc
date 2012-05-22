@@ -129,10 +129,50 @@ if has('persistent_undo')
 endif
 
 """ Vundle '''
-"set rtp+=~/.vim/vundle/
-"call vundle#rc()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 "filetype plugin on
 
 "Bundle 'Shougo/vimproc'
 "Bundle 'Shougo/vimshell'
+
+Bundle 'Shougo/neocomplcache'
+Bundle 'opsplorer'
+
+" neocomplcache
+let g:acp_enableAtStartup = 0
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_camel_case_completion = 1
+let g:neocomplcache_max_list = 20
+let g:neocomplcache_manual_completion_start_length = 4
+
+"シンタックス補完を無効に
+let g:neocomplcache_plugin_disable = {
+ \ 'syntax_complete' : 1,
+ \ }
+
+"改行で補完ウィンドウを閉じる
+"inoremap <expr><CR> neocomplcache#smart_close_popup() . "\<CR>"
+""tabで補完候補の選択を行う
+inoremap <expr><TAB> pumvisible() ? "\<Down>" : "\<TAB>"
+inoremap <expr><S-TAB> pumvisible() ? "\<Up>" : "\<S-TAB>"
+"C-h, BSで補完ウィンドウを確実に閉じる
+inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<BS>"
+
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" Enable heavy omni completion.
+if !exists('g:neocomplcache_omni_patterns')
+   let g:neocomplcache_omni_patterns = {}
+endif
+
+let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
+let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
+let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
