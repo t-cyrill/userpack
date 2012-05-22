@@ -1,0 +1,4 @@
+log on
+deflog on
+logfile {HOME}/log/screen/screen-%n-%H-%y%m%d-%t.log
+
