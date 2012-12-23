@@ -1,0 +1,10 @@
+dotfiles/.shell/alias/aliases.local
+dotfiles/.shell/bash/
+dotfiles/.shell/zsh/dotfiles/.zcompdump
+dotfiles/.shell/zsh/functions/
+dotfiles/.shell/zsh/history/
+dotfiles/.shell/zsh/local/
+dotfiles/.vim/.netrwhist
+dotfiles/.vim/syntax/
+dotfiles/.vim/tags/
+dotfiles/.vim/viminfo
