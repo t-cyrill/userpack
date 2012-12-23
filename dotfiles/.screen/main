@@ -1,0 +1,63 @@
+# term screen-256color
+
+# zombie 
+
+setenv LANG ja_JP.UTF-8
+shell /bin/zsh
+
+# The scroll buffer
+defscrollback 512
+markkeys h=^B:l=^F:$=^E:^U=^Z:^D=^V
+
+# Messages
+msgwait 3
+msgminwait 2
+
+# hardstatus string "%?%h%:%t (screen #%n on %H)%?"
+# caption always "%{=r dd}%-Lw%40L>%?%F%{=b dR}%:[%? %n%f %t %?%F%{-}%:]%?%+Lw %?%F%-024=GNU Screen of Git master%:%=%?"
+# hardstatus alwayslastline '%m/%d %02c:%s %{= .g}%H%{-} %L=%-w%45L>%{=u g.}%n %t%{-}%+w %-17<%=%{= .y}(%l)'
+hardstatus alwayslastline '%02c:%s %{= .g}%H%{-} %L=%-w%45L>%{=u g.}%n %t%{-}%+w %-17<%=%{= .y}(%l)'
+
+# default screens
+chdir
+screen -t zsh 0 zsh
+
+# bind n 
+# bind b screen
+bind l windowlist
+
+bind x remove
+bind j eval 'focus down'
+bind k eval 'focus up'
+#bind h eval 'focus left'
+#bind l eval 'focus right'
+bind h eval focus focus
+bind l eval focus focus
+bind + eval 'resize -v +1'
+bind - eval 'resize -v -1'
+bind > eval 'resize -h +1'
+bind < eval 'resize -h -1'
+bind v eval 'split -v' focus screen
+bind s eval 'split' focus screen
+bind = eval 'resize -v ='
+bind + eval 'resize -h +'
+
+startup_message off
+vbell off
+
+altscreen on
+
+# select 0
+# split
+# split -v
+# focus
+# focus
+# split -v
+# screen 2
+# focus top
+# focus
+# screen 1
+# focus bottom
+# screen 3
+# focus top
+
