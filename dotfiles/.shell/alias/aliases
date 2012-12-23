@@ -1,0 +1,26 @@
+#!/bin/zsh
+
+alias rm='rm -i'
+alias cp='cp -i -p'
+alias mv='mv -i'
+
+alias ls='ls --color'
+alias l="ls --show-control-chars"
+alias la='ls -A'
+alias ll='ls -al'
+alias lll="ll -t"
+
+alias du="du -h"
+alias df="df -h"
+
+if type colordiff >/dev/null ; then
+    alias diff="colordiff -u"
+fi
+
+alias lv="lv -c"
+
+SCRIPT_DIR=$(cd $(dirname $0);pwd)
+if [ -f "${SCRIPT_DIR}/aliases.local" ]; then
+    source "${SCRIPT_DIR}/aliases.local"
+fi
+
