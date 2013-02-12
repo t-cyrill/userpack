@@ -27,27 +27,15 @@ setopt correct
 # autoload predict-on
 # predict-on
 
-if [ -f "${ZSH_ROOT}/global/completion.zsh" ]; then
-    source "${ZSH_ROOT}/global/completion.zsh"
-fi
-
-if [ -f "${ZSH_ROOT}/global/history_search.zsh" ]; then
-    source "${ZSH_ROOT}/global/history_search.zsh"
-fi
-
-if [ -f "${ZSH_ROOT}/global/prompt.zsh" ]; then
-    source "${ZSH_ROOT}/global/prompt.zsh"
-fi
-
 if [ -f "${DOTFILES}/.shell/alias/aliases" ]; then
     source "${DOTFILES}/.shell/alias/aliases"
 fi
 
-if [ -f "${ZSH_ROOT}/global/screen.zsh" ]; then
-    source "${ZSH_ROOT}/global/screen.zsh"
-fi
-
-if [ -f "${ZSH_ROOT}/local/loadset.zsh" ]; then
-    source "${ZSH_ROOT}/local/loadset.zsh"
-fi
+FILES="`ls ${ZSH_ROOT}/global/*.zsh`\n`ls ${ZSH_ROOT}/local/*.zsh`"
+echo $FILES | while read -r file;
+do
+    if [ -f "$file" ]; then
+        source "$file"
+    fi
+done
 
