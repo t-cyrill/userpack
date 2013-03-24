@@ -1,7 +1,7 @@
 #!/bin/sh
 
 chsh -s /bin/zsh || exit
-cp -R dotfiles ~
+ln -s dotfiles {$HOME}
 sed -i -e "s|{HOME}|${HOME}|g" ~/dotfiles/.screen/log
 git clone https://github.com/gmarik/vundle.git ~/dotfiles/.vim/bundle/vundle
 
