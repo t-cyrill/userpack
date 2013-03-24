@@ -8,3 +8,4 @@ dotfiles/.vim/.netrwhist
 dotfiles/.vim/syntax/
 dotfiles/.vim/tags/
 dotfiles/.vim/viminfo
+dotfiles/gtags/tags/
