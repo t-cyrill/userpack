@@ -9,6 +9,7 @@ Bundle 'QuickBuf'
 "Bundle 'scrooloose/nerdtree'
 Bundle 'StanAngeloff/php.vim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'yanktmp.vim'
 
 if filereadable(expand(vim_root.'/plugins/neocomplcache.vim'))
     execute "source ".vim_root."/plugins/neocomplcache.vim"
