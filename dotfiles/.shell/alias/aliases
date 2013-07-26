@@ -18,6 +18,7 @@ if type colordiff >/dev/null ; then
 fi
 
 alias lv="lv -c"
+alias wis="whatisthis"
 
 SCRIPT_DIR=$(cd $(dirname $0);pwd)
 if [ -f "${SCRIPT_DIR}/aliases.local" ]; then
