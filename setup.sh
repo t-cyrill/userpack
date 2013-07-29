@@ -1,8 +1,21 @@
-#!/bin/sh
+#!/bin/sh -x
 
 SCRIPT_DIR=$(cd $(dirname $0);pwd)
 
 chsh -s /bin/zsh || exit
+
+if [ -e "${HOME}/dotfiles" ]; then
+    mv "${HOME}/dotfiles" "${HOME}/dotfiles.old"
+fi
+
+if [ -e "${HOME}/.zshenv" ]; then
+    mv "${HOME}/.zshenv" "${HOME}/.zshenv.old"
+fi
+
+if [ -e "${HOME}/.vimrc" ]; then
+    mv "${HOME}/.vimrc" "${HOME}/.vimrc.old"
+fi
+
 ln -s ${SCRIPT_DIR}/dotfiles ${HOME}
 # sed -i -e "s|{HOME}|${HOME}|g" ~/dotfiles/.screen/log
 git clone https://github.com/gmarik/vundle.git ${HOME}/dotfiles/.vim/bundle/vundle
