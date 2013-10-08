@@ -1,12 +1,15 @@
 set nocompatible
 
+autocmd!
+filetype off
+
 let g:vim_root = $HOME."/dotfiles/.vim"
 execute "set viminfo='".'20,\"1000,:20,%,n'.vim_root."/viminfo"
 
-autocmd!
-filetype plugin indent on
-syntax on
-
+"hi Pmenu ctermbg=0
+hi PmenuSel ctermbg=4
+hi PmenuSbar ctermbg=2
+hi PmenuThumb ctermfg=3
 
 if filereadable(expand(vim_root.'/global/all.vim'))
     execute "source ".vim_root."/global/all.vim"
@@ -16,3 +19,5 @@ if filereadable(expand(vim_root.'/vundle.vim'))
     execute "source ".vim_root."/vundle.vim"
 endif
 
+"filetype plugin indent on
+syntax on
