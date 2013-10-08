@@ -31,7 +31,7 @@ if [ -f "${DOTFILES}/.shell/alias/aliases" ]; then
     source "${DOTFILES}/.shell/alias/aliases"
 fi
 
-FILES="`ls ${ZSH_ROOT}/global/*.zsh`\n`ls ${ZSH_ROOT}/local/*.zsh`"
+FILES="`\ls ${ZSH_ROOT}/global/*.zsh`\n`\ls ${ZSH_ROOT}/local/*.zsh`"
 echo $FILES | while read -r file;
 do
     if [ -f "$file" ]; then
