@@ -5,12 +5,14 @@ call vundle#rc(vim_root.'/bundle/')
 Bundle 'Shougo/vimproc'
 "Bundle 'Shougo/vimshell'
 Bundle 'opsplorer'
-Bundle 'QuickBuf'
+Bundle 't-cyrill/QuickBuf'
 "Bundle 'scrooloose/nerdtree'
 Bundle 'StanAngeloff/php.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'yanktmp.vim'
-Bundle 'endwise.vim'
+"Bundle 'endwise.vim'
+Bundle 'rails.vim'
+Bundle 'slim-template/vim-slim.git'
 
 if filereadable(expand(vim_root.'/plugins/neocomplcache.vim'))
     execute "source ".vim_root."/plugins/neocomplcache.vim"
