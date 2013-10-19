@@ -43,7 +43,9 @@ if [ -f "${DOTFILES}/.shell/alias/aliases" ]; then
     source "${DOTFILES}/.shell/alias/aliases"
 fi
 
-FILES="`\ls ${ZSH_ROOT}/global/*.zsh`\n`\ls ${ZSH_ROOT}/local/*.zsh`"
+export EDITOR='vim'
+
+FILES="`\ls ${ZSH_ROOT}/global/*.zsh`"
 echo $FILES | while read -r file;
 do
     if [ -f "$file" ]; then
@@ -66,3 +68,6 @@ precmd() {
     echo -ne "\ek$name\e\\"
   fi
 }
+
+[ -f ${ZSH_ROOT}/global/zshrc_`uname` ] && source ${ZSH_ROOT}/global/zshrc_`uname`
+[ -f ${ZSH_ROOT}/local.zsh ] && ${ZSH_ROOT}/local.zsh
