@@ -1,5 +1,6 @@
 dotfiles/.shell/alias/aliases.local
 dotfiles/.shell/bash/
+dotfiles/.shell/zsh/local.zsh
 dotfiles/.shell/zsh/dotfiles/.zcompdump
 dotfiles/.shell/zsh/functions/
 dotfiles/.shell/zsh/history/
@@ -11,5 +12,5 @@ dotfiles/.vim/tags/
 dotfiles/.vim/viminfo
 dotfiles/.vim/bundle/
 dotfiles/.vim/cache/
-dotfiles/.vim/dic/php.dict
+dotfiles/.vim/dic/
 dotfiles/gtags/tags/
