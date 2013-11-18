@@ -27,6 +27,9 @@ setopt correct
 # autoload predict-on
 # predict-on
 
+# load bash profile
+source /etc/profile
+
 if [ -f "${DOTFILES}/.shell/alias/aliases" ]; then
     source "${DOTFILES}/.shell/alias/aliases"
 fi
