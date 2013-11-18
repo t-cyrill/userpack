@@ -4,8 +4,12 @@ dotfiles/.shell/zsh/dotfiles/.zcompdump
 dotfiles/.shell/zsh/functions/
 dotfiles/.shell/zsh/history/
 dotfiles/.shell/zsh/local/
+dotfiles/.shell/zsh/.zcompdump
 dotfiles/.vim/.netrwhist
 dotfiles/.vim/syntax/
 dotfiles/.vim/tags/
 dotfiles/.vim/viminfo
+dotfiles/.vim/bundle/
+dotfiles/.vim/cache/
+dotfiles/.vim/dic/php.dict
 dotfiles/gtags/tags/
