@@ -20,7 +20,7 @@ compinit -d "${ZSH_ROOT}/.zcompdump"
 
 export LANG=ja_JP.UTF-8
 
-setopt auto_pushd
+setopt auto_pushd pushdsilent
 setopt list_packed
 setopt correct
 
@@ -42,3 +42,4 @@ do
     fi
 done
 
+[ ${STY} ] || screen -rx || screen -D -RR
