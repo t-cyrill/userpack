@@ -30,6 +30,10 @@ setopt correct
 # load bash profile
 source /etc/profile
 
+if [ -x vim ]; then
+    export EDITOR="vim"
+fi
+
 if [ -f "${DOTFILES}/.shell/alias/aliases" ]; then
     source "${DOTFILES}/.shell/alias/aliases"
 fi
