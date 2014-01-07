@@ -1,4 +1,5 @@
 # term screen-256color
+term xterm-256color
 
 # zombie 
 
@@ -16,7 +17,8 @@ msgminwait 2
 # hardstatus string "%?%h%:%t (screen #%n on %H)%?"
 # caption always "%{=r dd}%-Lw%40L>%?%F%{=b dR}%:[%? %n%f %t %?%F%{-}%:]%?%+Lw %?%F%-024=GNU Screen of Git master%:%=%?"
 # hardstatus alwayslastline '%m/%d %02c:%s %{= .g}%H%{-} %L=%-w%45L>%{=u g.}%n %t%{-}%+w %-17<%=%{= .y}(%l)'
-hardstatus alwayslastline '%02c:%s %{= .g}%H%{-} %L=%-w%45L>%{=u g.}%n %t%{-}%+w %-17<%=%{= .y}(%l)'
+# hardstatus alwayslastline '%02c:%s %{= .g}%H%{-} %L=%-w%45L>%{=u g.}%n %t%{-}%+w %-17<%=%{= .y}(%l)'
+hardstatus alwayslastline '%{= kg}%02c:%s %H %{-}%L=%{= kb}%-w%{-}%45L>%{=u kr}%n %t%{-}%{= kb}%+w %-17<%=%{-}%{= .y}(%l)'
 
 # default screens
 chdir
