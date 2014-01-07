@@ -30,7 +30,9 @@ setopt correct
 # load bash profile
 source /etc/profile
 
-if [ -x vim ]; then
+export PATH="$HOME/usr/local/bin:$PATH"
+
+if type "vim" > /dev/null; then
     export EDITOR="vim"
 fi
 
