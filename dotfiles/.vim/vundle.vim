@@ -11,8 +11,9 @@ Bundle 'StanAngeloff/php.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'yanktmp.vim'
 "Bundle 'endwise.vim'
-Bundle 'rails.vim'
-Bundle 'slim-template/vim-slim.git'
+"Bundle 'rails.vim'
+"Bundle 'slim-template/vim-slim.git'
+Bundle 'altercation/vim-colors-solarized'
 
 if filereadable(expand(vim_root.'/plugins/neocomplcache.vim'))
     execute "source ".vim_root."/plugins/neocomplcache.vim"

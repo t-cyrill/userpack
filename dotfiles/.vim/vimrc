@@ -12,12 +12,15 @@ hi PmenuSbar ctermbg=2
 hi PmenuThumb ctermfg=3
 
 if filereadable(expand(vim_root.'/global/all.vim'))
-    execute "source ".vim_root."/global/all.vim"
+  execute "source ".vim_root."/global/all.vim"
 endif
 
 if filereadable(expand(vim_root.'/vundle.vim'))
-    execute "source ".vim_root."/vundle.vim"
+  execute "source ".vim_root."/vundle.vim"
 endif
 
-"filetype plugin indent on
+filetype plugin indent on
 syntax on
+
+set background=dark
+"colorscheme solarized
