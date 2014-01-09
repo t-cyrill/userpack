@@ -9,6 +9,8 @@ shell /bin/zsh
 # The scroll buffer
 defscrollback 512
 markkeys h=^B:l=^F:$=^E:^U=^Z:^D=^V
+#chdir
+#screen -t zsh 0 zsh
 
 # Messages
 msgwait 3
@@ -24,12 +26,6 @@ msgminwait 2
 # HH:mm:ss host [... (45%) num title ... ] ... (-16%) (LA)
 hardstatus alwayslastline '%{= kw}%02c:%s %{= .y}%H %{-}%L=%{= .b}%-w%{-}%46L>%{= .r}%n %t*%{-}%{= .b}%+w%-16=%{-}%{= .y}[%l]'
 
-# default screens
-chdir
-screen -t zsh 0 zsh
-
-# bind n 
-# bind b screen
 bind l windowlist
 
 bind x remove
@@ -49,17 +45,4 @@ vbell off
 
 altscreen on
 
-# select 0
-# split
-# split -v
-# focus
-# focus
-# split -v
-# screen 2
-# focus top
-# focus
-# screen 1
-# focus bottom
-# screen 3
-# focus top
-
+shelltitle "$ |zsh"
