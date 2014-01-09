@@ -33,6 +33,8 @@ set shiftwidth=4
 set laststatus=2
 set statusline=[%n]\ %t\ %y%{GetStatusEx()}\ %m%h%r=%l/%L,%c%V\ %P
 
+highlight StatusLine term=bold cterm=bold ctermfg=yellow ctermbg=black
+
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue
 match ZenkakuSpace /　/
 
