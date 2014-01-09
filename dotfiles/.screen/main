@@ -39,10 +39,6 @@ bind k eval 'focus up'
 #bind l eval 'focus right'
 bind h eval focus focus
 bind l eval focus focus
-bind + eval 'resize -v +1'
-bind - eval 'resize -v -1'
-bind > eval 'resize -h +1'
-bind < eval 'resize -h -1'
 bind v eval 'split -v' focus screen
 bind s eval 'split' focus screen
 bind = eval 'resize -v ='
