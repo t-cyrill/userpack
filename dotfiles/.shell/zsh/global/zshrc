@@ -52,11 +52,15 @@ done
 [ ${STY} ] || screen -rx || screen -D -RR
 
 preexec () {
+  if [[ $TERMCAP =~ screen ]]; then
     lastcmd=(${(s: :)${1}})
     echo -ne "\ek$lastcmd[1]\e\\"
+  fi
 }
 
 precmd() {
+  if [[ $TERMCAP =~ screen ]]; then
     name=`basename $SHELL`
     echo -ne "\ek$name\e\\"
+  fi
 }
