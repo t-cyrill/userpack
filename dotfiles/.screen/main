@@ -24,7 +24,7 @@ msgminwait 2
 #hardstatus alwayslastline '%{= kg}%02c:%s %H %{-}%L=%{= kb}%-w%{-}%45L>%{= kr}%n %t*%{-}%{= kb}%+w %-17<%=%{-}%{= .y}(%l)'
 #hardstatus alwayslastline '%{= kg}%02c:%s %H %{-}%L=%{= kb}%-w%{-}%50L>%{= kr}%n %t*%{-}%{= kb}%+w %-20<%=%{-}%{= .y}(%l)'
 # HH:mm:ss host [... (45%) num title ... ] ... (-16%) (LA)
-hardstatus alwayslastline '%{= kw}%02c:%s %{= .y}%H %{-}%L=%{= .b}%-w%{-}%46L>%{= .r}%n %t*%{-}%{= .b}%+w%-16=%{-}%{= .y}[%l]'
+hardstatus alwayslastline '%{= kw}%02c:%s %{= .y}%H %L=%{= .b}%-w%46>%{= .r}%n %t*%{= .b}%+w%-16=%{= .y}[%l]'
 
 bind l windowlist
 
