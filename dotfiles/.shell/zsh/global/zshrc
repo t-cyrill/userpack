@@ -31,6 +31,7 @@ setopt correct
 source /etc/profile
 
 export PATH="$HOME/usr/local/bin:$PATH"
+export TERM=xterm-256color
 
 if type "vim" > /dev/null; then
     export EDITOR="vim"
