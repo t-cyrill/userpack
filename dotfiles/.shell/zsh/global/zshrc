@@ -50,3 +50,13 @@ do
 done
 
 [ ${STY} ] || screen -rx || screen -D -RR
+
+preexec () {
+    lastcmd=(${(s: :)${1}})
+    echo -ne "\ek$lastcmd[1]\e\\"
+}
+
+precmd() {
+    name=`basename $SHELL`
+    echo -ne "\ek$name\e\\"
+}
