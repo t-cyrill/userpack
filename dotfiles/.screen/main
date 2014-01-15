@@ -9,7 +9,7 @@ shell /bin/zsh
 # The scroll buffer
 defscrollback 512
 markkeys h=^B:l=^F:$=^E:^U=^Z:^D=^V
-#chdir
+chdir
 #screen -t zsh 0 zsh
 
 # Messages
