@@ -2,6 +2,10 @@ if filereadable(expand(vim_root.'/global/set.vim'))
     execute "source ".vim_root."/global/set.vim"
 endif
 
+if filereadable(expand(vim_root.'/global/filetype.vim'))
+    execute "source ".vim_root."/global/filetype.vim"
+endif
+
 if filereadable(expand(vim_root.'/global/vundle.vim'))
     execute "source ".vim_root."/global/vundle.vim"
 endif

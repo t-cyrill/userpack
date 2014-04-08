@@ -12,7 +12,6 @@ autocmd filetype php :set errorformat=%m\ in\ %f\ on\ line\ %l
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-"バイナリ編集(xxd)モード（vim -b での起動、もしくは *.bin ファイルを開くと発動します）
 augroup BinaryXXD
   autocmd!
   autocmd BufReadPre  *.bin let &binary =1
