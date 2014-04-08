@@ -12,10 +12,12 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'yanktmp.vim'
 "Bundle 'endwise.vim'
 "Bundle 'rails.vim'
-"Bundle 'slim-template/vim-slim.git'
 Bundle 'altercation/vim-colors-solarized'
+"Bundle 'slim-template/vim-slim.git'
+Bundle 'kchmck/vim-coffee-script'
 
 if filereadable(expand(vim_root.'/plugins/neocomplcache.vim'))
+    let g:neocomplete#force_overwrite_completefunc = 1
     execute "source ".vim_root."/plugins/neocomplcache.vim"
 endif
 
