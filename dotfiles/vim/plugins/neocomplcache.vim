@@ -1,5 +1,5 @@
 " neocomplcache
-Bundle 'Shougo/neocomplcache'
+Plug 'Shougo/neocomplcache'
 
 set completeopt=menuone
 

@@ -15,8 +15,8 @@ if filereadable(expand(vim_root.'/global/all.vim'))
   execute "source ".vim_root."/global/all.vim"
 endif
 
-if filereadable(expand(vim_root.'/vundle.vim'))
-  execute "source ".vim_root."/vundle.vim"
+if filereadable(expand(vim_root.'/plugins.vim'))
+  execute "source ".vim_root."/plugins.vim"
 endif
 
 filetype plugin indent on
