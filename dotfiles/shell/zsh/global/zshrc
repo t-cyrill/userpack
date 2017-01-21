@@ -13,7 +13,7 @@ HISTSIZE=100000
 SAVEHIST=100000
 
 DOTFILES="${HOME}/userpack/dotfiles"
-ZSH_ROOT="${DOTFILES}/.shell/zsh"
+ZSH_ROOT="${DOTFILES}/shell/zsh"
 HISTFILE="${ZSH_ROOT}/history/.zsh_history"
 
 # Use modern completion system
@@ -40,8 +40,8 @@ if type "vim" > /dev/null; then
     export EDITOR="vim"
 fi
 
-if [ -f "${DOTFILES}/.shell/alias/aliases" ]; then
-    source "${DOTFILES}/.shell/alias/aliases"
+if [ -f "${DOTFILES}/shell/alias/aliases" ]; then
+    source "${DOTFILES}/shell/alias/aliases"
 fi
 
 export EDITOR='vim'

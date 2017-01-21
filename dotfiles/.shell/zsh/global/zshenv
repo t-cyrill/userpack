@@ -1,5 +1,0 @@
-# -*- mode:shell-script -*-
-
-ZDOTDIR="$HOME/userpack/dotfiles/.shell/zsh/dotfiles"
-export ZDOTDIR
-
