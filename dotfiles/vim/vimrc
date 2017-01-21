@@ -3,7 +3,7 @@ set nocompatible
 autocmd!
 filetype off
 
-let g:vim_root = $HOME."/dotfiles/.vim"
+let g:vim_root = $HOME."/dotfiles/vim"
 execute "set viminfo='".'20,\"1000,:20,%,n'.vim_root."/viminfo"
 
 "hi Pmenu ctermbg=0
