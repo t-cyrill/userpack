@@ -12,7 +12,7 @@ bindkey '^[[Z' reverse-menu-complete
 HISTSIZE=100000
 SAVEHIST=100000
 
-DOTFILES="${HOME}/dotfiles"
+DOTFILES="${HOME}/userpack/dotfiles"
 ZSH_ROOT="${DOTFILES}/.shell/zsh"
 HISTFILE="${ZSH_ROOT}/history/.zsh_history"
 
