@@ -19,7 +19,7 @@ curl -sfLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.
 
 ln -sf ${HOME}/userpack/dotfiles/shell/zsh/global/zshenv ${HOME}/.zshenv
 ln -sf ${HOME}/userpack/dotfiles/vim/vimrc ${HOME}/.vimrc
-ln -sf ${HOME}/userpack/dotfiles/.screen/main ${HOME}/.screenrc
+ln -sf ${HOME}/userpack/dotfiles/screen/main ${HOME}/.screenrc
 
 vim -c ":PlugInstall" -c ":q" -c ":q"
 #php ${HOME}/userpack/dotfiles/vim/dic/builder.php > ${HOME}/userpack/dotfiles/vim/dic/php.dict

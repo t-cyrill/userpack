@@ -13,6 +13,7 @@ Plug 'yanktmp.vim'
 Plug 'altercation/vim-colors-solarized'
 "Plug 'slim-template/vim-slim.git'
 Plug 'kchmck/vim-coffee-script'
+Plug 'Shougo/neocomplcache'
 
 call plug#end()
 

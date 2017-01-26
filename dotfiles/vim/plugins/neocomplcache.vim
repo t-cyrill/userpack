@@ -1,6 +1,4 @@
 " neocomplcache
-Plug 'Shougo/neocomplcache'
-
 set completeopt=menuone
 
 let g:neocomplcache_temporary_dir = vim_root.'/cache/neocon'
