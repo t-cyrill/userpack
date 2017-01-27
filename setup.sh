@@ -18,6 +18,7 @@ fi
 curl -sfLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ln -sf ${HOME}/userpack/dotfiles/shell/zsh/global/zshenv ${HOME}/.zshenv
+ln -sf ${HOME}/userpack/dotfiles/shell/zsh/global/zshrc ${HOME}/.zshrc
 ln -sf ${HOME}/userpack/dotfiles/vim/vimrc ${HOME}/.vimrc
 ln -sf ${HOME}/userpack/dotfiles/screen/main ${HOME}/.screenrc
 
