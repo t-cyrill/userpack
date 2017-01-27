@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'Shougo/vimproc'
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'Shougo/neocomplcache'
 "Plug 'Shougo/vimshell'
 Plug 'opsplorer'
 Plug 't-cyrill/QuickBuf'
